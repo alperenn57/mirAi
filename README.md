@@ -31,7 +31,7 @@
 
 | Açık Tema | Mobil Görünüm |
 |---|---|
-| ![Açık tema](./assets/acik_tema.png) | ![Sohbet](./assets/acik_chat.png) |
+| ![Açık tema](./assets/acik_tema.png) | ![Sohbet](./assets/mobil_acik.png) |
 
 
 
