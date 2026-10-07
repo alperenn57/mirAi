@@ -21,13 +21,13 @@
 <div align="center">
 
 <!-- Ana tanıtım görseli: karşılama sayfası veya sohbet ekranı (önerilen genişlik: ~1200px) -->
-![mirAI Ana Görsel](../assets/anasayfa.png)
+![mirAI Ana Görsel](./assets/anasayfa.png)
 
 </div>
 
 | Karşılama Sayfası | Sohbet Ekranı |
 |---|---|
-| ![Karşılama sayfası](./assets/anasayfa.png) | ![Sohbet ekranı](./assets/chat2.png) |
+| ![Karşılama sayfası](./assets/karsilama.png) | ![Sohbet ekranı](./assets/chat2.png) |
 
 | Açık Tema | Mobil Görünüm |
 |---|---|
