@@ -4,10 +4,10 @@
 
 **Türkçe empati odaklı, yerel ve gizlilik öncelikli sohbet deneyimi**
 
-*Her işin bir ustası olur; bu işin ustası da Mir.*
+*Her işin bir ustası olur; bu işin ustası da bu işin mir'i.*
 
-![Runtime](https://img.shields.io/badge/Runtime-Ollama-black?style=flat-square)
-![Model](https://img.shields.io/badge/Model-mirAI-Gemma-psikolog-tam-%20(GGUF%20Q4__K__M)-4285F4?style=flat-square)
+![Runtime](https://img.shields.badge/badge/Runtime-Ollama-black?style=flat-square)
+![Model](https://img.shields.io/badge/Model-mirAI--Gemma--psikolog--tam--Q4__K__M-4285F4?style=flat-square)
 ![Frontend](https://img.shields.io/badge/Frontend-Vanilla%20JS%20%7C%20HTML%20%7C%20CSS-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Language](https://img.shields.io/badge/Dil-T%C3%BCrk%C3%A7e-red?style=flat-square)
 ![Inference](https://img.shields.io/badge/%C3%87%C4%B1kar%C4%B1m-Yerel%20%2F%20Offline-success?style=flat-square)
