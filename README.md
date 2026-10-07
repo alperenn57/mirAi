@@ -16,19 +16,40 @@
 
 ---
 
+## 🖼 Ekran Görüntüleri
+
+<div align="center">
+
+<!-- Ana tanıtım görseli: karşılama sayfası veya sohbet ekranı (önerilen genişlik: ~1200px) -->
+![mirAI Ana Görsel](./docs/images/hero.png)
+
+</div>
+
+| Karşılama Sayfası | Sohbet Ekranı |
+|---|---|
+| ![Karşılama sayfası](./docs/images/screenshot-landing.png) | ![Sohbet ekranı](./docs/images/screenshot-chat.png) |
+
+| Açık Tema | Mobil Görünüm |
+|---|---|
+| ![Açık tema](./docs/images/screenshot-light.png) | ![Mobil](./docs/images/screenshot-mobile.png) |
+
+> Yer tutucuları `docs/images/` klasörüne kendi ekran görüntülerinizi koyarak değiştirin.
+
+---
+
 ## 📑 İçindekiler
 
-1. [Proje Hakkında](#-proje-hakkında)
-2. [Mimari Özellikler](#-mimari-özellikler)
-3. [Model Tasarımı ve Modelfile](#-model-tasarımı-ve-modelfile)
-4. [Teknolojiler](#-teknolojiler)
-5. [Sistem Mimarisi](#-sistem-mimarisi)
-6. [Depo Yapısı](#-depo-yapısı)
-7. [Kurulum Kılavuzu](#-kurulum-kılavuzu)
-8. [Arayüz](#-arayüz)
-9. [Sorun Giderme](#-sorun-giderme)
-10. [Gizlilik ve Sorumluluk Reddi](#-gizlilik-ve-sorumluluk-reddi)
-11. [Görsel Yer Tutucuları](#-görsel-yer-tutucuları)
+1. [Ekran Görüntüleri](#-ekran-görüntüleri)
+2. [Proje Hakkında](#-proje-hakkında)
+3. [Mimari Özellikler](#-mimari-özellikler)
+4. [Model Tasarımı ve Modelfile](#-model-tasarımı-ve-modelfile)
+5. [Teknolojiler](#-teknolojiler)
+6. [Sistem Mimarisi](#-sistem-mimarisi)
+7. [Depo Yapısı](#-depo-yapısı)
+8. [Kurulum Kılavuzu](#-kurulum-kılavuzu)
+9. [Arayüz](#-arayüz)
+10. [Sorun Giderme](#-sorun-giderme)
+11. [Gizlilik ve Sorumluluk Reddi](#-gizlilik-ve-sorumluluk-reddi)
 12. [Geliştirici](#-geliştirici)
 
 ---
@@ -370,20 +391,6 @@ Kayıt veya hesap gerekmez.
 - Model ağırlıkları yalnızca ilk kurulumda Hugging Face üzerinden indirilir.
 
 > **⚠️ mirAI deneysel bir projedir.** Sentetik konuşma verileriyle eğitilmiş bir dil modelidir; **profesyonel, klinik veya tıbbi tavsiye vermez** ve bir uzmanın yerini tutmaz. Kendinizi veya başkasını tehlikede hissediyorsanız lütfen bir sağlık profesyoneline veya yerel acil yardım hizmetlerine (Türkiye'de **112**) başvurun.
-
----
-
-## 🖼 Görsel Yer Tutucuları
-
-> Aşağıdaki yer tutucuları kendi ekran görüntülerinizle değiştirin.
-
-| Karşılama Sayfası | Sohbet Ekranı |
-|---|---|
-| ![Karşılama sayfası](./docs/images/screenshot-landing.png) | ![Sohbet ekranı](./docs/images/screenshot-chat.png) |
-
-| Açık Tema | Mobil Görünüm |
-|---|---|
-| ![Açık tema](./docs/images/screenshot-light.png) | ![Mobil](./docs/images/screenshot-mobile.png) |
 
 ---
 
