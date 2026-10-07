@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c111b" />
+    <meta
+      name="description"
+      content="mirAi, her işin bir ustası olur; bu işin de ustası Mir diyerek yola çıkan deneysel bir yapay zeka sohbet deneyimidir."
+    />
+    <title>mirAi - İçinden geçenleri anlat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app theme-dark" id="app">
+      <div class="night-sky" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+      <main id="landing">
+        <nav class="nav container">
+          <button class="brand" id="homeButton" aria-label="mirAi ana sayfa">
+            <span class="brand-mark" aria-hidden="true">◐</span>mirAi
+          </button>
+          <div class="nav-links">
+            <a href="#about">Nedir?</a>
+            <a href="#how">Nasıl çalışır?</a>
+            <a href="#privacy">Güven & gizlilik</a>
+          </div>
+          <div class="nav-actions">
+            <button class="icon-button" id="themeButton" aria-label="Temayı değiştir">◐</button>
+            <button class="nav-cta js-start-chat">Sohbete başla <span aria-hidden="true">→</span></button>
+          </div>
+          <button class="icon-button menu-trigger" id="menuButton" aria-label="Menüyü aç">☰</button>
+        </nav>
+
+        <div class="mobile-nav" id="mobileNav" hidden>
+          <button id="closeMenuButton" aria-label="Menüyü kapat">×</button>
+          <a href="#about">Nedir?</a>
+          <a href="#how">Nasıl çalışır?</a>
+          <button class="js-start-chat">Sohbete başla</button>
+        </div>
+
+        <section class="hero container">
+          <div class="hero-copy">
+            <div class="eyebrow"><span aria-hidden="true">✦</span> sakin bir dijital alan</div>
+            <h1>İçinden geçenleri<br /><em>anlat.</em></h1>
+            <p>Her işin bir ustası olur; bu işin ustası da Mir. mirAi, düşüncelerini sakin ve anlaşılır bir sohbete dönüştürmek için tasarlanmış deneysel bir yapay zeka alanıdır.</p>
+            <button class="primary-button js-start-chat">Sohbete başla <span aria-hidden="true">→</span></button>
+            <small>Kayıt gerekmez · Deneysel bir deneyimdir</small>
+          </div>
+          <div class="hero-moon" aria-label="Gece gökyüzünde sakin bir ay">
+            <div class="moon-halo"></div>
+            <div class="moon-visual">
+              <span class="crater crater-one"></span>
+              <span class="crater crater-two"></span>
+              <span class="crater crater-three"></span>
+              <span class="crater crater-four"></span>
+              <span class="crater crater-five"></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="info-band container" id="about">
+          <div>
+            <span class="section-kicker">01 / mirAi nedir?</span>
+            <h2>Bazen çözüm değil,<br /><em>bir alan</em> gerekir.</h2>
+          </div>
+          <p>mirAi; stresini, aklından geçenleri veya sadece konuşma ihtiyacını paylaşabileceğin deneysel bir conversational AI projesidir. Seni dinlemek ve düşüncelerini düzenlemene yardımcı olmak için tasarlanır.</p>
+        </section>
+
+        <section class="steps container" id="how">
+          <span class="section-kicker">02 / Nasıl çalışır?</span>
+          <div class="step-grid">
+            <article><b>01</b><h3>Gel</h3><p>Hesap oluşturmadan, kendi hızında giriş yap.</p></article>
+            <article><b>02</b><h3>Paylaş</h3><p>İçinden geçenleri güvenli ve sakin bir alanda yaz.</p></article>
+            <article><b>03</b><h3>Devam et</h3><p>Konuşmanın yönünü sen belirle; istersen kaldığın yerden dön.</p></article>
+          </div>
+        </section>
+
+        <section class="privacy-band container" id="privacy">
+          <span class="privacy-icon" aria-hidden="true">✓</span>
+          <div>
+            <h3>Mahremiyet baştan düşünülür.</h3>
+            <p>mirAi profesyonel tıbbi tavsiye vermez. Konuşmaların hassas olabileceğini kabul eder ve deneysel bir sistem olarak sınırlarını açıkça belirtir.</p>
+          </div>
+        </section>
+
+        <footer class="footer container">
+          <div class="footer-brand">
+            <span>mirAi</span>
+            <small>Deneysel conversational AI · 2026</small>
+          </div>
+          <p>Bilgisayar Mühendisliği öğrencisi <strong>Alperen Ünal</strong> tarafından; sentetik konuşma verileriyle sıfırdan eğitilmiş deneysel bir LLM'in uçtan uca mimarisini ve kullanıcı etkileşimini test etmek amacıyla geliştirilmiştir. Klinik veya tıbbi tavsiye niteliği taşımaz.</p>
+        </footer>
+      </main>
+
+      <main class="chat-shell" id="chat" hidden>
+        <aside class="chat-sidebar">
+          <div class="sidebar-top">
+            <button class="brand js-home"><span class="brand-mark" aria-hidden="true">◐</span>mirAi</button>
+            <button class="icon-button js-home" aria-label="Ana sayfaya dön">×</button>
+          </div>
+          <button class="new-chat" id="newChatButton">+ <span>Yeni sohbet</span></button>
+          <div class="history">
+            <span>Bugün</span>
+            <button class="history-item active">İçinden geçenler</button>
+          </div>
+          <div class="sidebar-bottom"><small>mirAi deneysel bir sohbet deneyimidir.</small></div>
+        </aside>
+
+        <section class="chat-main">
+          <header class="chat-header">
+            <button class="icon-button mobile-only js-home" aria-label="Ana sayfaya dön">→</button>
+            <div><span class="status-dot"></span> <span>mirAi</span><small>sakin bir alan</small></div>
+            <button class="icon-button" id="chatThemeButton" aria-label="Temayı değiştir">◐</button>
+          </header>
+
+          <div class="messages" id="messages">
+            <div class="chat-intro" id="chatIntro">
+              <div class="intro-mark">◐</div>
+              <h2>Bugün aklından<br /><em>neler geçiyor?</em></h2>
+              <p>İstersen bir cümleyle başla. Burada acele etmene gerek yok.</p>
+              <div class="starter-list">
+                <button data-starter="Bugün biraz stresli hissediyorum.">Bugün biraz stresli hissediyorum.<span aria-hidden="true">→</span></button>
+                <button data-starter="Bir konuda karar vermekte zorlanıyorum.">Bir konuda karar vermekte zorlanıyorum.<span aria-hidden="true">→</span></button>
+                <button data-starter="Sadece biraz konuşmak istiyorum.">Sadece biraz konuşmak istiyorum.<span aria-hidden="true">→</span></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="composer-wrap">
+            <div class="composer" id="composer">
+              <textarea id="draft" placeholder="İçinden geçenleri yaz..." rows="1" aria-label="Mesaj yaz"></textarea>
+              <button class="send-button" id="sendButton" aria-label="Mesajı gönder">↗</button>
+            </div>
+            <small>mirAi profesyonel tıbbi tavsiye vermez.</small>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

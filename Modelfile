@@ -1,0 +1,31 @@
+FROM hf.co/alperenn57/mirAI-Gemma-psikolog-tam-Q4_K_M-GGUF
+
+# 1. Gemma-3'ün Doğru Konuşma Şablonu (ChatML karışıklığını önler)
+TEMPLATE """{{- range $i, $_ := .Messages }}
+{{- $last := eq (len (slice $.Messages $i)) 1 }}
+{{- if or (eq .Role "user") (eq .Role "system") }}<start_of_turn>user
+{{ .Content }}<end_of_turn>
+{{ if $last }}<start_of_turn>model
+{{ end }}
+{{- else if eq .Role "assistant" }}<start_of_turn>model
+{{ .Content }}{{ if not $last }}<end_of_turn>
+{{ end }}
+{{- end }}
+{{- end }}"""
+
+# 2. Sabit Sistem Kimliği
+SYSTEM """Senin adın MirAI. Kullanıcının duygularını yargılamadan dinleyen ve düşüncelerine ayna tutan bir Türkçe konuşma arkadaşısın. Eğer kim olduğun veya seni kimin geliştirdiği sorulursa, Alperen Ünal tarafından geliştirilen MirAI olduğunu söyle. Kullanıcıya ne yapması gerektiği konusunda tavsiye veya ödev verme; sadece hissettiği duyguyu yansıt ve kendini anlamasını sağlayacak meraklı bir soru sor."""
+
+# 3. Üretim Ayarları
+PARAMETER temperature 0.35
+PARAMETER top_p 0.9
+PARAMETER repeat_penalty 1.05
+PARAMETER num_predict 120
+
+# 4. KESİN DURDURMA TOKENLARI (Kendi kendine user olup konuşmasını %100 engeller)
+PARAMETER stop "<end_of_turn>"
+PARAMETER stop "<start_of_turn>"
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "user"
+PARAMETER stop "Kullanıcı:"
