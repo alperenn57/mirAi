@@ -21,7 +21,7 @@
 <div align="center">
 
 <!-- Ana tanıtım görseli: karşılama sayfası veya sohbet ekranı (önerilen genişlik: ~1200px) -->
-![mirAI Ana Görsel](./docs/images/hero.png)
+![mirAI Ana Görsel](../assets/anasayfa.png)
 
 </div>
 
