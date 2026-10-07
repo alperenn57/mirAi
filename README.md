@@ -27,13 +27,13 @@
 
 | Karşılama Sayfası | Sohbet Ekranı |
 |---|---|
-| ![Karşılama sayfası](./docs/images/screenshot-landing.png) | ![Sohbet ekranı](./docs/images/screenshot-chat.png) |
+| ![Karşılama sayfası](./assets/anasayfa.png) | ![Sohbet ekranı](./assets/chat2.png) |
 
 | Açık Tema | Mobil Görünüm |
 |---|---|
-| ![Açık tema](./docs/images/screenshot-light.png) | ![Mobil](./docs/images/screenshot-mobile.png) |
+| ![Açık tema](./assets/acik_tema.png) | ![Sohbet](./assets/acik_chat.png) |
 
-> Yer tutucuları `docs/images/` klasörüne kendi ekran görüntülerinizi koyarak değiştirin.
+
 
 ---
 
